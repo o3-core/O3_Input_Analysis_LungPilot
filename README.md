@@ -1,4 +1,4 @@
-# o3_input_report_lungpilot
+# O3_Input Analysis Report
 
 Summarise an O3 radiotherapy record set (JSON, lung pilot) into a Word (.docx) report, and optionally into a
 results JSON. The tool runs entirely on your own computer: it makes no network calls, uploads nothing, and
@@ -16,20 +16,20 @@ postal codes appear only in the optional source-file table (`--analyze-sources`)
 ## Quick start
 
 ```
-python o3_input_report_lungpilot.py data.json
+python O3_Input_Analyze_LungHNPilots.py data.json
 ```
 
 For offline distances, install a GeoNames postal-code file once (see "Order of steps" below):
 
 ```
-python o3_input_report_lungpilot.py data.json --analyze-sources
-python o3_input_report_lungpilot.py --install-source US.zip
+python O3_Input_Analyze_LungHNPilots.py data.json --analyze-sources
+python O3_Input_Analyze_LungHNPilots.py --install-source US.zip
 ```
 
 ## Usage (output of `--help`)
 
 ```text
-usage: o3_input_report_lungpilot.py [-h] [-o OUTPUT] [--analyze-sources]
+usage: O3_Input_Analyze_LungHNPilots.py [-h] [-o OUTPUT] [--analyze-sources]
                                     [--install-source FILE]
                                     [--country COUNTRY] [--units {mi,km}]
                                     [--fill-distances OUT.json] [--savewmods]
